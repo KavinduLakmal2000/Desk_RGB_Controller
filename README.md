@@ -47,3 +47,5 @@ The Arduino reads serial input and updates the LED strip accordingly.
 
 KLTechnology
 2025
+
+![alt text](image.png)
