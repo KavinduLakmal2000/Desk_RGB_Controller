@@ -1,4 +1,4 @@
-# KL LED Desk Controller
+# Python + Arduino LED Desk Controller
 
 A simple desktop LED controller built using **Arduino Pro Mini** and **WS2812B LED strip**, controlled via a custom Python desktop application.
 
