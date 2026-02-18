@@ -1,0 +1,13 @@
+rmdir /s /q build
+rmdir /s /q dist
+del led_controller.spec
+
+py -3.11 -m venv venv
+venv\Scripts\activate
+
+pip install pyinstaller
+
+pip install --force-reinstall pyserial
+
+python -m PyInstaller --noconfirm --clean --onefile --windowed --icon=led.ico --collect-all serial led_controller.py
+
