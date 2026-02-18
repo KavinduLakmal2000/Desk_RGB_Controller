@@ -1,51 +1,47 @@
-# Python + Arduino LED Desk Controller
+# Desk RGB Controller – Linux Application
 
-A simple desktop LED controller built using **Arduino Pro Mini** and **WS2812B LED strip**, controlled via a custom Python desktop application.
-
-This project allows you to:
-- Turn LEDs ON / OFF
-- Adjust brightness (0–255)
-- Auto-connect to last used COM port
-- Save settings locally
+This branch contains the Linux version of the Desk RGB Controller desktop application.
 
 ---
 
-## 🖥 Software Features
+## 🐧 Platform
 
-- Windows desktop application (built with Tkinter)
-- Serial communication using PySerial
-- Brightness control slider
-- Config file auto-save (`config.json`)
-- Remembers last used COM port and brightness
-- Clean and simple UI
+- Ubuntu / Debian based systems
+- x64 architecture
 
 ---
 
-## 🔌 Hardware Used
+## ✨ Features
 
-- Arduino Pro Mini (5V / 16MHz)
-- WS2812B LED Strip
-- USB to TTL Converter (FTDI / CH340 / CP2102)
-- External 5V Power Supply (recommended for longer strips)
+- Real-time RGB control
+- Native Linux binary
+- Install and uninstall scripts included
+- Optimized startup performance
 
 ---
 
-## 🧠 How It Works
+## 🚀 Installation
 
-The desktop application communicates with the Arduino over Serial.
+1. Download the latest Linux binary from the **Releases** section.
 
-Commands sent:
+2. Make executable:
 
-- `ON`
-- `OFF`
-- `BRIGHTNESS <value>`
+chmod +x RGB_Controller_x64_vX.X.X_linux
 
-Example:
-The Arduino reads serial input and updates the LED strip accordingly.
+3. Run:
 
-👨‍💻 Author
+./RGB_Controller_x64_vX.X.X_linux
 
-KLTechnology
-2025
+OR use:
 
-![alt text](image.png)
+./install.sh
+
+
+---
+
+## 🔧 Requirements
+
+- Arduino firmware must be uploaded (see `main` branch)
+- USB connection to microcontroller
+
+---

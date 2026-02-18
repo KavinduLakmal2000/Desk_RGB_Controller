@@ -2,7 +2,7 @@
 
 APP_NAME="RGBController"
 INSTALL_DIR="/opt/$APP_NAME"
-BIN_NAME="led_controller"
+BIN_NAME="RGB_Controller_x64_v2.0_linux"
 ICON_NAME="led-light.png"
 
 echo "Installing $APP_NAME..."
