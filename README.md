@@ -26,3 +26,20 @@ Download the latest Windows executable from the **Releases** section.
 
 Run:
 RGB_Controller_win_setup_x64_v2.0.exe
+
+install com drivers if needed.
+
+---
+
+## 🔧 Requirements
+
+- Arduino firmware must be uploaded (see `main` branch)
+- USB connection to microcontroller
+
+---
+
+## 📂 Source Structure
+
+This branch contains Windows-specific configuration and build settings.
+
+---
