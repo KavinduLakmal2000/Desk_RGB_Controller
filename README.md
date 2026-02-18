@@ -1,52 +1,49 @@
-# RGB Controller
-# Python + Arduino LED Desk Controller
+# Desk RGB Controller – Arduino Firmware
 
-A simple desktop LED controller built using **Arduino Pro Mini** and **WS2812B LED strip**, controlled via a custom Python desktop application.
+This branch contains the Arduino firmware required for the RGB Controller system.
 
-This project allows you to:
-- Turn LEDs ON / OFF
-- Adjust brightness (0–255)
-- Auto-connect to last used COM port
-- Save settings locally
+The firmware runs on the microcontroller and communicates with the desktop application to control RGB lighting.
 
 ---
 
-## 🖥 Software Features
+## 🔧 Hardware Requirements
 
-- Windows desktop application (built with Tkinter)
-- Serial communication using PySerial
-- Brightness control slider
-- Config file auto-save (`config.json`)
-- Remembers last used COM port and brightness
-- Clean and simple UI
+- Arduino board (Uno / Nano / compatible)
+- WS2812b RGB LED strip
+- Appropriate power supply
+- USB cable for communication
 
 ---
 
-## 🔌 Hardware Used
+## 📦 Features
 
-- Arduino Pro Mini (5V / 16MHz)
-- WS2812B LED Strip
-- USB to TTL Converter (FTDI / CH340 / CP2102)
-- External 5V Power Supply (recommended for longer strips)
+- Serial communication with desktop app
+- Real-time RGB color updates
+- Optimized PWM output
+- Stable and responsive lighting control
 
 ---
 
-## 🧠 How It Works
+## 🚀 Upload Instructions
 
-The desktop application communicates with the Arduino over Serial.
+1. Open the `.ino` file in Arduino IDE
+2. Select correct board and COM port
+3. Click **Upload**
+4. Connect to the desktop application
 
-Commands sent:
+---
 
-- `ON`
-- `OFF`
-- `BRIGHTNESS <value>`
+## 🖥️ Desktop Application
 
-Example:
-The Arduino reads serial input and updates the LED strip accordingly.
+Desktop application is available in separate branches:
 
-👨‍💻 Author
+- `windows` branch → Windows version
+- `linux` branch → Linux version
 
-KLTechnology
-2025
+Precompiled binaries are available in the **Releases** section.
 
-![alt text](image.png)
+---
+
+## 📜 License
+
+Specify your license here (MIT recommended).
